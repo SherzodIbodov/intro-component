@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,700;1,700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background: #ff7979;
+  background-image: url(/imgs/bacgraunt.png);
+  width: 100%;
+  height: 100vh;
+  padding: 0 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.wrapper .site-info {
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 45px;
+  width: 100%;
+  max-width: 525px;
+}
+.wrapper .site-info h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  letter-spacing: 0.52px;
+  padding-bottom: 11px;
+}
+.wrapper .site-info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+}
+.wrapper .registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  max-width: 540px;
+}
+.wrapper .registration .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  width: 540px;
+  height: 60px;
+  -webkit-box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+          box-shadow: 0 8px 0 0 rgba(0, 0, 0, 0.15);
+  background: #5e54a4;
+}
+.wrapper .registration .price p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 173%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+}
+.wrapper .registration .register {
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 540px;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
+          box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
+}
+.wrapper .registration .register label {
+  padding-left: 300px;
+  font-weight: 500;
+  font-size: 11px;
+  color: #ff7979;
+  display: none;
+  font-style: italic;
+}
+.wrapper .registration .register input:focus + label {
+  display: block;
+}
+.wrapper .registration .register input {
+  width: 100%;
+  max-width: 460px;
+  min-height: 56px;
+  border: none;
+  border: 1px solid #dedede;
+  outline: none;
+  padding-left: 32px;
+  color: #3d3b48;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0.25px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.wrapper .registration .register input:focus {
+  border: 2px solid #ff7979;
+  background-image: url(/imgs/exclamation.svg);
+  background-repeat: no-repeat;
+  background-position: right 25px top 16px;
+}
+.wrapper .registration .register button {
+  width: 100%;
+  max-width: 460px;
+  min-height: 56px;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  margin-top: 20px;
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
+          box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.09);
+  background: #38cc8b;
+}
+.wrapper .registration .register button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.wrapper .registration .register button:active {
+  background: #77e2b3;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.wrapper .registration .register p {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #bab7d4;
+}
+.wrapper .registration .register p span {
+  font-weight: 700;
+  color: #ff7979;
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    padding: 24px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+  }
+  .wrapper .site-info {
+    padding: 0;
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 64px;
+  }
+  .wrapper .site-info h1 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+  }
+  .wrapper .registration {
+    padding: 0;
+    margin: 0 auto;
+  }
+  .wrapper .registration .price {
+    width: 100%;
+    max-width: 540px;
+  }
+  .wrapper .registration .price p {
+    padding: 18px 66px;
+  }
+  .wrapper .registration .register {
+    width: 100%;
+    max-width: 540px;
+  }
+}
