@@ -18,11 +18,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 45px;
   .site-info {
     color: #ffffff;
     display: flex;
     flex-direction: column;
-    padding-right: 45px;
     width: 100%;
     max-width: 525px;
     h1 {
@@ -64,6 +64,7 @@ body {
       }
     }
     .register {
+      gap: 20px;
       padding: 40px;
       border-radius: 8px;
       width: 100%;
@@ -74,38 +75,42 @@ body {
       justify-content: center;
       align-items: center;
       box-shadow: 0px 10px 0px #00000025;
-      label {
-        padding-left: 300px;
-        font-weight: 500;
-        font-size: 11px;
-        color: #ff7979;
-        display: none;
-        font-style: italic;
-      }
-      input:focus + label {
-        display: block;
-      }
-      input {
+      div {
         width: 100%;
         max-width: 460px;
-        min-height: 56px;
-        border: none;
-        border: 1px solid #dedede;
-        outline: none;
-        padding-left: 32px;
-        color: #3d3b48;
-        font-size: 14px;
-        font-weight: 600;
-        line-height: 26px;
-        letter-spacing: 0.25px;
-        border-radius: 8px;
-        margin-top: 20px;
-        cursor: pointer;
-        &:focus {
-          border: 2px solid #ff7979;
-          background-image: url(/imgs/exclamation.svg);
-          background-repeat: no-repeat;
-          background-position: right 25px top 16px;
+        min-height: 66px;
+        span {
+          padding-left: 300px;
+          font-weight: 500;
+          font-size: 11px;
+          color: #ff7979;
+          display: none;
+          font-style: italic;
+        }
+        input:focus + span {
+          display: block;
+        }
+        input {
+          width: 100%;
+          max-width: 460px;
+          min-height: 56px;
+          border: none;
+          border: 1px solid #dedede;
+          outline: none;
+          padding-left: 32px;
+          color: #3d3b48;
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 26px;
+          letter-spacing: 0.25px;
+          border-radius: 8px;
+          cursor: pointer;
+          &:focus {
+            border: 2px solid #ff7979;
+            background-image: url(/imgs/exclamation.svg);
+            background-repeat: no-repeat;
+            background-position: right 25px top 16px;
+          }
         }
       }
       button {

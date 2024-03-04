@@ -30,6 +30,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 45px;
 }
 .wrapper .site-info {
   color: #ffffff;
@@ -40,7 +41,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 45px;
   width: 100%;
   max-width: 525px;
 }
@@ -95,6 +95,7 @@ body {
   color: #fff;
 }
 .wrapper .registration .register {
+  gap: 20px;
   padding: 40px;
   border-radius: 8px;
   width: 100%;
@@ -116,7 +117,12 @@ body {
   -webkit-box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
           box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1450980392);
 }
-.wrapper .registration .register label {
+.wrapper .registration .register div {
+  width: 100%;
+  max-width: 460px;
+  min-height: 66px;
+}
+.wrapper .registration .register div span {
   padding-left: 300px;
   font-weight: 500;
   font-size: 11px;
@@ -124,10 +130,10 @@ body {
   display: none;
   font-style: italic;
 }
-.wrapper .registration .register input:focus + label {
+.wrapper .registration .register div input:focus + span {
   display: block;
 }
-.wrapper .registration .register input {
+.wrapper .registration .register div input {
   width: 100%;
   max-width: 460px;
   min-height: 56px;
@@ -141,10 +147,9 @@ body {
   line-height: 26px;
   letter-spacing: 0.25px;
   border-radius: 8px;
-  margin-top: 20px;
   cursor: pointer;
 }
-.wrapper .registration .register input:focus {
+.wrapper .registration .register div input:focus {
   border: 2px solid #ff7979;
   background-image: url(/imgs/exclamation.svg);
   background-repeat: no-repeat;
