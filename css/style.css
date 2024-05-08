@@ -122,17 +122,6 @@ body {
   max-width: 460px;
   min-height: 66px;
 }
-.wrapper .registration .register div span {
-  padding-left: 300px;
-  font-weight: 500;
-  font-size: 11px;
-  color: #ff7979;
-  display: none;
-  font-style: italic;
-}
-.wrapper .registration .register div input:focus + span {
-  display: block;
-}
 .wrapper .registration .register div input {
   width: 100%;
   max-width: 460px;
@@ -149,11 +138,10 @@ body {
   border-radius: 8px;
   cursor: pointer;
 }
-.wrapper .registration .register div input:focus {
-  border: 2px solid #ff7979;
-  background-image: url(/imgs/exclamation.svg);
-  background-repeat: no-repeat;
-  background-position: right 25px top 16px;
+.wrapper .registration .register .name {
+  border: 1px solid red;
+  border-radius: 8px;
+  color: red;
 }
 .wrapper .registration .register button {
   width: 100%;

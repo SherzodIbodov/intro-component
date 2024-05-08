@@ -16,35 +16,43 @@
           invaluable.
         </p>
       </div>
-
       <div class="registration">
         <div class="price">
           <p><b>Try it free 7 days</b> then $20/mo. thereafter</p>
         </div>
-        <div class="register">
-          <div>
-            <input type="tex" placeholder="Name" />
-            <span for="">First Name cannot be empty</span>
+        <div id="error"></div>
+        <form id="form">
+          <div class="register">
+            <div>
+              <input type="tex" placeholder="Name"/>
+              <!-- <img src="/imgs/exclamation.svg" alt=""> -->
+              <span class="name-text"></span>
+            </div>
+            <div>
+              <!-- <label for=""></label> -->
+              <input id="lastName" type="tex" placeholder="Last Name" />
+              <!-- <img src="/imgs/exclamation.svg" alt=""> -->
+              <span for=""></span>
+            </div>
+            <div>
+              <input id="email" type="email" placeholder="Email Adress" />
+              <!-- <img src="/imgs/exclamation.svg" alt=""> -->
+              <span for=""></span>
+            </div>
+            <div>
+              <input id="password" type="password" placeholder="Password" />
+              <!-- <img src="/imgs/exclamation.svg" alt=""> -->
+              <span for=""></span>
+            </div>
+            <button>CLAIM YOUR FREE TRIAL</button>
+            <p>
+              By clicking the button, you are agreeing to our
+              <!-- <span>Terms and Services</span> -->
+            </p>
           </div>
-          <div>
-            <input type="tex" placeholder="Last Name" />
-            <span for="">Last Name cannot be empty</span>
-          </div>
-          <div>
-            <input type="email" placeholder="Email Adress" />
-            <span for="">Looks like this is not an mail</span>
-          </div>
-          <div>
-            <input type="password" placeholder="Password" />
-            <span for="">Password cannot be empty</span>
-          </div>
-          <button><a href="">CLAIM YOUR FREE TRIAL</a></button>
-          <p>
-            By clicking the button, you are agreeing to our
-            <span>Terms and Services</span>
-          </p>
-        </div>
+        </form>
       </div>
     </div>
+    <script src="/main.js"></script>
   </body>
 </html>
